@@ -1,13 +1,23 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-	printf("Hello, World\n");
+	int n;
 
-	int a = 1;
-	int b = 2;
-	int c = a + b;
+	printf("정수 입력: ");
+	scanf("%d", &n);
 
-	printf("%d와 %d를 더하면 %d 입니다.\n", a, b, c);
+	if (n % 2)
+		printf("홀수");
+	else
+		printf("짝수");
+
+	printf("입니다\n");
+
+	(n % 2) ? printf("홀수") : printf("짝수");
+	printf("입니다.\n");
+
+	return 0;
+	
 }
